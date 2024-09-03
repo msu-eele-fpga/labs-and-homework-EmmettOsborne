@@ -83,5 +83,6 @@ architecture de10nano_arch of de10nano_top is
 begin
 
   -- Add VDHL code to connect the four switches (SW) to four LEDs
+  LED (7 downto 0) <= "0000" & SW (3 downto 0);
 
 end architecture de10nano_arch;
