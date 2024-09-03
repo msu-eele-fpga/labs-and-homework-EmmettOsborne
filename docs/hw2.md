@@ -48,11 +48,11 @@ git pull
 2. 'git branch -c [branchname]'
 3. 'git checkout [branchname]'
 4. Atomic commits:
-  1. 'git pull'
-  2. Make your funny little changes
-  3. 'git add'
-  4. 'git commit'
-  5. 'git push'
+	1. 'git pull'
+	2. Make your funny little changes
+	3. 'git add'
+	4. 'git commit'
+	5. 'git push'
 5. 'git push --set-upstream origin [branchname]'
 6. 'git checkout main'
 7. 'git merge [branchname]'
@@ -66,7 +66,7 @@ Here's a motivational article about Atomic Commits because trust me, I need the 
 
 And a photo of our repo setup!
 <p align="center">
-<img src=./images/repository_setup_1repo.png width=25%>
+<img src=./assets/repository-setup-2repos.svg width=25%>
 </p>
 
 [Okay now that you've gone over all that, do it again I wasn't listening](#lab-2-submission-for-eele367)
