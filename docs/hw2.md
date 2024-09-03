@@ -66,7 +66,7 @@ Here's a motivational article about Atomic Commits because trust me, I need the 
 
 And a photo of our repo setup!
 <p align="center">
-<img src=./images/repository_setup_1repo.png width=25%>
+<img src=./assets/repository_setup_2repos.png width=25%>
 </p>
 
 [Okay now that you've gone over all that, do it again I wasn't listening](#lab-2-submission-for-eele367)
