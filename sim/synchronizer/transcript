@@ -1,0 +1,18 @@
+vsim work.synchronizer_tb
+# vsim work.synchronizer_tb 
+# Start time: 22:15:09 on Sep 11,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading std.env(body)
+# Loading work.synchronizer_tb(testbench)#1
+# Loading work.synchronizer(behavioral)#1
+run
+# ** Note: all tests passed!
+#    Time: 100 ns  Iteration: 0  Instance: /synchronizer_tb
+# 1
+# Break in Process check_output at C:/Users/Administrator/eele467_emmett_osborne/labs-and-homework-EmmettOsborne/sim/synchronizer/synchronizer_tb.vhd line 111
+quit -sim
+# End time: 22:16:40 on Sep 11,2024, Elapsed time: 0:01:31
+# Errors: 0, Warnings: 1
