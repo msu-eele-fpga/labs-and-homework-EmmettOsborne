@@ -10,7 +10,7 @@ I had intended to come to your work session on the 9th but I had a conflicting d
 ## Deliverables
 Test passed Screenshot:
 <p allign="center">
-<img src=./assets/hw-3-screenshot.png width 25%>
+<img src=./assets/hw-3-screenshot.PNG width 25%>
 </p>
 
 ### Questions 
