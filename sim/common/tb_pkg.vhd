@@ -1,7 +1,7 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-package tb_lkg is
+package tb_pkg is
 	constant CLK_PERIOD : time := 20 ns;
 	constant COMBINATIONAL_DELAY : time := 1 ns;
 	
