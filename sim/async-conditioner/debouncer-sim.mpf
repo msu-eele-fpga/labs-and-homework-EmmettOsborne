@@ -983,7 +983,7 @@ Resolution = ns
 UserTimeUnit = default
 
 ; Default run length
-RunLength = 100 us
+RunLength = 10 us
 
 ; Maximum iterations that can be run without advancing simulation time
 IterationLimit = 10000000
@@ -1052,7 +1052,7 @@ IterationLimit = 10000000
 ; given severity or higher will cause a running simulation to stop.
 ; This value is ignored during elaboration.
 ; 0 = Note  1 = Warning  2 = Error  3 = Failure  4 = Fatal
-BreakOnAssertion = 3
+BreakOnAssertion = 4
 
 ; Severity level of a tool message which will cause a running simulation to 
 ; stop. This value is ignored during elaboration. Default is to not break.
@@ -2309,7 +2309,7 @@ Project_File_P_0 = vhdl_novitalcheck 0 file_type vhdl group_id 0 cover_nofec 0 v
 Project_File_1 = C:/Users/Administrator/eele467_emmett_osborne/labs-and-homework-EmmettOsborne/sim/common/assert_pkg.vhd
 Project_File_P_1 = vhdl_novitalcheck 0 file_type vhdl group_id 0 cover_nofec 0 vhdl_nodebug 0 vhdl_1164 1 vhdl_noload 0 vhdl_synth 0 vhdl_enable0In 0 folder {Top Level} last_compile 1728355910 vhdl_disableopt 0 cover_excludedefault 0 vhdl_vital 0 vhdl_warn1 1 vhdl_showsource 0 vhdl_explicit 1 vhdl_warn2 1 vhdl_0InOptions {} cover_covercells 0 vhdl_warn3 1 vhdl_options {} cover_optlevel 3 voptflow 1 vhdl_warn4 1 ood 0 toggle - vhdl_warn5 1 compile_to work cover_noshort 0 compile_order 0 dont_compile 0 cover_nosub 0 vhdl_use93 2008
 Project_File_2 = C:/Users/Administrator/eele467_emmett_osborne/labs-and-homework-EmmettOsborne/sim/async-conditioner/debouncer.vhd
-Project_File_P_2 = vhdl_novitalcheck 0 file_type vhdl group_id 0 cover_nofec 0 vhdl_nodebug 0 vhdl_1164 1 vhdl_noload 0 vhdl_synth 0 vhdl_enable0In 0 folder {Top Level} last_compile 1728366293 vhdl_disableopt 0 cover_excludedefault 0 vhdl_vital 0 vhdl_warn1 1 vhdl_showsource 0 vhdl_explicit 1 vhdl_warn2 1 vhdl_0InOptions {} cover_covercells 0 vhdl_warn3 1 vhdl_options {} cover_optlevel 3 voptflow 1 vhdl_warn4 1 ood 0 toggle - vhdl_warn5 1 compile_to work cover_noshort 0 compile_order 3 dont_compile 0 cover_nosub 0 vhdl_use93 2008
+Project_File_P_2 = vhdl_novitalcheck 0 file_type vhdl group_id 0 cover_nofec 0 vhdl_nodebug 0 vhdl_1164 1 vhdl_noload 0 vhdl_synth 0 vhdl_enable0In 0 folder {Top Level} last_compile 1728367919 vhdl_disableopt 0 cover_excludedefault 0 vhdl_vital 0 vhdl_warn1 1 vhdl_showsource 0 vhdl_explicit 1 vhdl_warn2 1 vhdl_0InOptions {} cover_covercells 0 vhdl_warn3 1 vhdl_options {} cover_optlevel 3 voptflow 1 vhdl_warn4 1 ood 0 toggle - vhdl_warn5 1 compile_to work cover_noshort 0 compile_order 3 dont_compile 0 cover_nosub 0 vhdl_use93 2008
 Project_File_3 = C:/Users/Administrator/eele467_emmett_osborne/labs-and-homework-EmmettOsborne/sim/async-conditioner/debouncer_tb.vhd
 Project_File_P_3 = vhdl_novitalcheck 0 file_type vhdl group_id 0 cover_nofec 0 vhdl_nodebug 0 vhdl_1164 1 vhdl_noload 0 vhdl_synth 0 vhdl_enable0In 0 folder {Top Level} last_compile 1726795817 vhdl_disableopt 0 cover_excludedefault 0 vhdl_vital 0 vhdl_warn1 1 vhdl_showsource 0 vhdl_explicit 1 vhdl_warn2 1 vhdl_0InOptions {} cover_covercells 0 vhdl_warn3 1 vhdl_options {} cover_optlevel 3 voptflow 1 vhdl_warn4 1 ood 0 toggle - vhdl_warn5 1 compile_to work cover_noshort 0 compile_order 4 dont_compile 0 cover_nosub 0 vhdl_use93 2008
 Project_File_4 = C:/Users/Administrator/eele467_emmett_osborne/labs-and-homework-EmmettOsborne/sim/common/print_pkg.vhd

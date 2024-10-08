@@ -184,3 +184,2008 @@ quit -sim
 # Compile of debouncer.vhd was successful.
 # Compile of debouncer_tb.vhd was successful with warnings.
 # 5 compiles, 0 failed with no errors.
+vsim -gui work.debouncer_tb
+# vsim -gui work.debouncer_tb 
+# Start time: 23:48:53 on Oct 07,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.fixed_float_types
+# Loading ieee.math_real(body)
+# Loading ieee.fixed_generic_pkg(body)
+# Loading ieee.float_generic_pkg(body)
+# Loading ieee.fixed_pkg
+# Loading ieee.float_pkg
+# Loading work.assert_pkg(body)
+# Loading work.print_pkg(body)
+# Loading work.tb_pkg(body)
+# Loading std.env(body)
+# Loading work.debouncer_tb(testbench)#1
+add wave -position insertpoint  \
+sim:/debouncer_tb/clk_tb
+add wave -position insertpoint  \
+sim:/debouncer_tb/rst_tb
+add wave -position insertpoint  \
+sim:/debouncer_tb/bouncer_tb
+add wave -position insertpoint  \
+sim:/debouncer_tb/debounced_tb
+run
+# ----------------------------------------------------
+# testing debouncer with debounce time = 1000 ns
+# ----------------------------------------------------
+# test: before button pressed
+# test: while pressed and bouncing
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 411 ns  Iteration: 0  Process: /debouncer_tb/response_checker File: C:/Users/Administrator/eele467_emmett_osborne/labs-and-homework-EmmettOsborne/sim/common/assert_pkg.vhd
+# Break in Subprogram assert_that at C:/Users/Administrator/eele467_emmett_osborne/labs-and-homework-EmmettOsborne/sim/common/assert_pkg.vhd line 102
+# Load canceled
+quit -sim
+vsim -gui work.debouncer_tb -voptargs=+acc
+# End time: 23:54:53 on Oct 07,2024, Elapsed time: 0:06:00
+# Errors: 1, Warnings: 16
+# vsim -gui work.debouncer_tb -voptargs="+acc" 
+# Start time: 23:54:53 on Oct 07,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "debouncer(debouncer_arch)".
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "debouncer(debouncer_arch)".
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.fixed_float_types
+# Loading ieee.math_real(body)
+# Loading ieee.fixed_generic_pkg(body)
+# Loading ieee.float_generic_pkg(body)
+# Loading ieee.fixed_pkg
+# Loading ieee.float_pkg
+# Loading work.assert_pkg(body)
+# Loading work.print_pkg(body)
+# Loading work.tb_pkg(body)
+# Loading std.env(body)
+# Loading work.debouncer_tb(testbench)#1
+# Loading work.debouncer(debouncer_arch)#1
+# Loading work.debouncer(debouncer_arch)#2
+add wave -position insertpoint  \
+sim:/debouncer_tb/clk_tb \
+sim:/debouncer_tb/rst_tb \
+sim:/debouncer_tb/bouncer_tb \
+sim:/debouncer_tb/debounced_tb
+run
+# ----------------------------------------------------
+# testing debouncer with debounce time = 1000 ns
+# ----------------------------------------------------
+# test: before button pressed
+# test: while pressed and bouncing
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 411 ns  Iteration: 0  Process: /debouncer_tb/response_checker File: C:/Users/Administrator/eele467_emmett_osborne/labs-and-homework-EmmettOsborne/sim/common/assert_pkg.vhd
+# Break in Subprogram assert_that at C:/Users/Administrator/eele467_emmett_osborne/labs-and-homework-EmmettOsborne/sim/common/assert_pkg.vhd line 102
+run
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 431 ns  Iteration: 0  Process: /debouncer_tb/response_checker File: C:/Users/Administrator/eele467_emmett_osborne/labs-and-homework-EmmettOsborne/sim/common/assert_pkg.vhd
+# Break in Subprogram assert_that at C:/Users/Administrator/eele467_emmett_osborne/labs-and-homework-EmmettOsborne/sim/common/assert_pkg.vhd line 102
+run
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 451 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 471 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 491 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 511 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 531 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 551 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 571 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 591 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 611 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 631 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 651 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 671 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 691 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 711 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 731 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 751 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 771 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 791 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 811 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 831 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 851 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 871 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 891 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 911 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 931 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 951 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 971 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 991 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 1011 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 1031 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 1051 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 1071 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 1091 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 1111 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 1131 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 1151 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 1171 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 1191 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 1211 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 1231 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 1251 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 1271 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 1291 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 1311 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 1331 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 1351 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 1371 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 1391 ns  Iteration: 0  Instance: /debouncer_tb
+# test: while button held
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1411 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1431 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1451 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1471 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1491 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1511 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1531 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1551 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1571 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1591 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1611 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1631 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1651 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1671 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1691 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1711 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1731 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1751 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1771 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1791 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1811 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1831 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1851 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1871 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1891 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1911 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1931 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1951 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1971 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1991 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 2011 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 2031 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 2051 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 2071 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 2091 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 2111 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 2131 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 2151 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 2171 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 2191 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 2211 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 2231 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 2251 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 2271 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 2291 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 2311 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 2331 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 2351 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 2371 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 2391 ns  Iteration: 0  Instance: /debouncer_tb
+# test: while released and bouncing
+# test: after button released
+# test: make sure debouncer debounces for correct time
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4411 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4431 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4451 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4471 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4491 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4511 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4531 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4551 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4571 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4591 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4611 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4631 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4651 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4671 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4691 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4711 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4731 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4751 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4771 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4791 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4811 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4831 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4851 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4871 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4891 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4911 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4931 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4951 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4971 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4991 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 5011 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 5031 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 5051 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 5071 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 5091 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 5111 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 5131 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 5151 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 5171 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 5191 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 5211 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 5231 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 5251 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 5271 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 5291 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 5311 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 5331 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 5351 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 5371 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 5391 ns  Iteration: 0  Instance: /debouncer_tb
+# test: make sure debouncer remains high for entire debounce time
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 6611 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 6631 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 6651 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 6671 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 6691 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 6711 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 6731 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 6751 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 6771 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 6791 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 6811 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 6831 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 6851 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 6871 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 6891 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 6911 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 6931 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 6951 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 6971 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 6991 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7011 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7031 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7051 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7071 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7091 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7111 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7131 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7151 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7171 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7191 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7211 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7231 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7251 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7271 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7291 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7311 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7331 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7351 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7371 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7391 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7411 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7431 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7451 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7471 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7491 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7511 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7531 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7551 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7571 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7591 ns  Iteration: 0  Instance: /debouncer_tb
+# ----------------------------------------------------
+# testing debouncer with debounce time = 10000 ns
+# ----------------------------------------------------
+# test: before button pressed
+# test: while pressed and bouncing
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8011 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8031 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8051 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8071 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8091 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8111 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8131 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8151 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8171 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8191 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8211 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8231 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8251 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8271 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8291 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8311 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8331 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8351 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8371 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8391 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8411 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8431 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8451 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8471 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8491 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8511 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8531 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8551 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8571 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8591 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8611 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8631 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8651 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8671 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8691 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8711 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8731 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8751 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8771 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8791 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8811 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8831 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8851 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8871 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8891 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8911 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8931 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8951 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8971 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8991 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9011 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9031 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9051 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9071 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9091 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9111 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9131 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9151 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9171 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9191 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9211 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9231 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9251 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9271 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9291 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9311 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9331 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9351 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9371 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9391 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9411 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9431 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9451 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9471 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9491 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9511 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9531 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9551 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9571 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9591 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9611 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9631 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9651 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9671 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9691 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9711 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9731 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9751 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9771 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9791 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9811 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9831 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9851 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9871 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9891 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9911 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9931 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9951 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9971 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9991 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 10011 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 10031 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 10051 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 10071 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 10091 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 10111 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 10131 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 10151 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 10171 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 10191 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 10211 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 10231 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 10251 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 10271 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 10291 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 10311 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 10331 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 10351 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 10371 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 10391 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 10411 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 10431 ns  Iteration: 0  Instance: /debouncer_tb
+# Compile of assert_pkg.vhd was successful.
+# Compile of print_pkg.vhd was successful.
+# Compile of tb_pkg.vhd was successful.
+# Compile of debouncer.vhd was successful.
+# Compile of debouncer_tb.vhd was successful with warnings.
+# 5 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "debouncer(debouncer_arch)".
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "debouncer(debouncer_arch)".
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.fixed_float_types
+# Loading ieee.math_real(body)
+# Loading ieee.fixed_generic_pkg(body)
+# Loading ieee.float_generic_pkg(body)
+# Loading ieee.fixed_pkg
+# Loading ieee.float_pkg
+# Loading work.assert_pkg(body)
+# Loading work.print_pkg(body)
+# Loading work.tb_pkg(body)
+# Loading std.env(body)
+# Loading work.debouncer_tb(testbench)#1
+# Loading work.debouncer(debouncer_arch)#1
+# Loading work.debouncer(debouncer_arch)#2
+run
+# ----------------------------------------------------
+# testing debouncer with debounce time = 1000 ns
+# ----------------------------------------------------
+# test: before button pressed
+# test: while pressed and bouncing
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 411 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 431 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 451 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 471 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 491 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 511 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 531 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 551 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 571 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 591 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 611 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 631 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 651 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 671 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 691 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 711 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 731 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 751 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 771 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 791 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 811 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 831 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 851 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 871 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 891 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 911 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 931 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 951 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 971 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 991 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 1011 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 1031 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 1051 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 1071 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 1091 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 1111 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 1131 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 1151 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 1171 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 1191 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 1211 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 1231 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 1251 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 1271 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 1291 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 1311 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 1331 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 1351 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 1371 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 1391 ns  Iteration: 0  Instance: /debouncer_tb
+# test: while button held
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1411 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1431 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1451 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1471 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1491 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1511 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1531 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1551 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1571 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1591 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1611 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1631 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1651 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1671 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1691 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1711 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1731 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1751 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1771 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1791 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1811 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1831 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1851 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1871 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1891 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1911 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1931 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1951 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1971 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 1991 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 2011 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 2031 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 2051 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 2071 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 2091 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 2111 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 2131 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 2151 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 2171 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 2191 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 2211 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 2231 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 2251 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 2271 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 2291 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 2311 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 2331 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 2351 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 2371 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while button held'
+#      actual: 0, expected: 1
+#    Time: 2391 ns  Iteration: 0  Instance: /debouncer_tb
+# test: while released and bouncing
+# test: after button released
+# test: make sure debouncer debounces for correct time
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4411 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4431 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4451 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4471 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4491 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4511 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4531 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4551 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4571 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4591 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4611 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4631 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4651 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4671 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4691 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4711 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4731 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4751 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4771 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4791 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4811 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4831 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4851 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4871 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4891 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4911 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4931 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4951 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4971 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 4991 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 5011 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 5031 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 5051 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 5071 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 5091 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 5111 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 5131 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 5151 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 5171 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 5191 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 5211 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 5231 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 5251 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 5271 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 5291 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 5311 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 5331 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 5351 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 5371 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 5391 ns  Iteration: 0  Instance: /debouncer_tb
+# test: make sure debouncer remains high for entire debounce time
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 6611 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 6631 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 6651 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 6671 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 6691 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 6711 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 6731 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 6751 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 6771 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 6791 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 6811 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 6831 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 6851 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 6871 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 6891 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 6911 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 6931 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 6951 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 6971 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 6991 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7011 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7031 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7051 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7071 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7091 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7111 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7131 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7151 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7171 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7191 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7211 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7231 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7251 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7271 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7291 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7311 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7331 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7351 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7371 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7391 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7411 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7431 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7451 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7471 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7491 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7511 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7531 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7551 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7571 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'remains high for entire debounce time'
+#      actual: 0, expected: 1
+#    Time: 7591 ns  Iteration: 0  Instance: /debouncer_tb
+# ----------------------------------------------------
+# testing debouncer with debounce time = 10000 ns
+# ----------------------------------------------------
+# test: before button pressed
+# test: while pressed and bouncing
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8011 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8031 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8051 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8071 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8091 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8111 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8131 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8151 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8171 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8191 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8211 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8231 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8251 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8271 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8291 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8311 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8331 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8351 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8371 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8391 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8411 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8431 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8451 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8471 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8491 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8511 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8531 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8551 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8571 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8591 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8611 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8631 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8651 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8671 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8691 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8711 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8731 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8751 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8771 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8791 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8811 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8831 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8851 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8871 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8891 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8911 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8931 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8951 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8971 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 8991 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9011 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9031 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9051 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9071 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9091 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9111 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9131 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9151 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9171 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9191 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9211 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9231 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9251 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9271 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9291 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9311 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9331 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9351 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9371 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9391 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9411 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9431 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9451 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9471 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9491 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9511 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9531 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9551 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9571 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9591 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9611 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9631 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9651 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9671 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9691 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9711 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9731 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9751 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9771 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9791 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9811 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9831 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9851 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9871 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9891 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9911 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9931 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9951 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9971 ns  Iteration: 0  Instance: /debouncer_tb
+# ** Failure: error in test case 'while pressed and bouncing'
+#      actual: 0, expected: 1
+#    Time: 9991 ns  Iteration: 0  Instance: /debouncer_tb
+# Compile of assert_pkg.vhd was successful.
+# Compile of print_pkg.vhd was successful.
+# Compile of tb_pkg.vhd was successful.
+# Compile of debouncer.vhd was successful.
+# Compile of debouncer_tb.vhd was successful with warnings.
+# 5 compiles, 0 failed with no errors.
