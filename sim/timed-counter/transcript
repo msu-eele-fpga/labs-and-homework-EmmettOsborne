@@ -125,3 +125,26 @@ run
 # End of testbench.
 # 1
 # Break in Process stimuli_generator at C:/Users/Administrator/eele467_emmett_osborne/labs-and-homework-EmmettOsborne/sim/vending-machine/vending_machine_tb.vhd line 72
+quit -sim
+# End time: 23:00:32 on Oct 07,2024, Elapsed time: 1:14:45
+# Errors: 0, Warnings: 1
+# reading C:/intelFPGA_lite/22.1std/questa_fse/win64/../modelsim.ini
+# Loading project debouncer-sim
+# Compile of debouncer_tb.vhd failed with 9 errors.
+# Compile of debouncer.vhd failed with 9 errors.
+# Compile of assert_pkg.vhd was successful.
+# Compile of print_pkg.vhd was successful.
+# Compile of tb_pkg.vhd was successful.
+# 5 compiles, 2 failed with 18 errors.
+# Compile of debouncer_tb.vhd failed with 8 errors.
+# Compile of debouncer.vhd failed with 1 errors.
+# Compile of assert_pkg.vhd was successful.
+# Compile of print_pkg.vhd was successful.
+# Compile of tb_pkg.vhd was successful.
+# 5 compiles, 2 failed with 9 errors.
+# Compile of debouncer_tb.vhd failed with 8 errors.
+# Compile of debouncer.vhd failed with 1 errors.
+# Compile of assert_pkg.vhd was successful.
+# Compile of print_pkg.vhd was successful.
+# Compile of tb_pkg.vhd was successful.
+# 5 compiles, 2 failed with 9 errors.
