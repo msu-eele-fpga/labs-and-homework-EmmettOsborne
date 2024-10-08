@@ -29,25 +29,25 @@ begin
     state_transition : process(current_state, nickel, dime)
     begin
         case current_state is
-            when ZERO =>
-                if nickel = '1' then
-                    next_state <= FIVE;
-                elsif dime = '1' then
+            when ZERO => -- Gotta switch order and do dime first incase they're both 1 for whatever reason :shrug:
+                if dime = '1' then
                     next_state <= TEN;
+                elsif nickel = '1' then
+                    next_state <= FIVE;
                 else
                     next_state <= ZERO;
                 end if;
 
-            when FIVE =>
-                if nickel = '1' then
-                    next_state <= TEN;
-                elsif dime = '1' then
+            when FIVE => -- Gotta switch order and do dime first incase they're both 1 for whatever reason :shrug:
+                if dime = '1' then
                     next_state <= FIFTEEN;
+                elsif nickel = '1' then
+                    next_state <= TEN;
                 else
                     next_state <= FIVE;
                 end if;
 
-            when TEN =>
+            when TEN => -- Order doesn't matter here tho :D
                 if nickel = '1' then
                     next_state <= FIFTEEN;
                 elsif dime = '1' then
