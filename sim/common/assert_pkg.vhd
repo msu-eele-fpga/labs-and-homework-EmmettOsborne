@@ -65,9 +65,15 @@ package body assert_pkg is
         end if;
     end;
 
-    procedure assert_that(msg: string; expr: std_logic) is begin
-        assert_that(msg, ?? expr);
-    end;
+    procedure assert_that(msg: string; expr: std_logic) is
+		begin
+			 if expr = '1' then
+				  assert_that(msg, true);
+			 else
+				  assert_that(msg, false);
+			 end if;
+	 end procedure assert_that;
+
 
     function character_from_std_ulogic(value: std_ulogic) return character is
         type conversion_array_type is array (std_ulogic) of character;
