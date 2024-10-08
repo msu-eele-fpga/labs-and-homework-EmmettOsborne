@@ -148,3 +148,39 @@ quit -sim
 # Compile of print_pkg.vhd was successful.
 # Compile of tb_pkg.vhd was successful.
 # 5 compiles, 2 failed with 9 errors.
+# Compile of debouncer_tb.vhd failed with 5 errors.
+# Compile of debouncer.vhd failed with 5 errors.
+# Compile of assert_pkg.vhd was successful.
+# Compile of print_pkg.vhd was successful.
+# Compile of tb_pkg.vhd was successful.
+# 5 compiles, 2 failed with 10 errors.
+# Compile of debouncer_tb.vhd failed with 5 errors.
+# Compile of debouncer.vhd failed with 5 errors.
+# Compile of assert_pkg.vhd was successful.
+# Compile of print_pkg.vhd was successful.
+# Compile of tb_pkg.vhd was successful.
+# 5 compiles, 2 failed with 10 errors.
+# Compile of debouncer_tb.vhd failed with 5 errors.
+# Compile of debouncer.vhd failed with 3 errors.
+# Compile of assert_pkg.vhd was successful.
+# Compile of print_pkg.vhd was successful.
+# Compile of tb_pkg.vhd was successful.
+# 5 compiles, 2 failed with 8 errors.
+# Compile of debouncer_tb.vhd failed with 5 errors.
+# Compile of debouncer.vhd was successful.
+# Compile of assert_pkg.vhd was successful.
+# Compile of print_pkg.vhd was successful.
+# Compile of tb_pkg.vhd was successful.
+# 5 compiles, 1 failed with 5 errors.
+# Compile of assert_pkg.vhd was successful.
+# Compile of print_pkg.vhd was successful.
+# Compile of tb_pkg.vhd was successful.
+# Compile of debouncer.vhd was successful.
+# Compile of debouncer_tb.vhd failed with 5 errors.
+# 5 compiles, 1 failed with 5 errors.
+# Compile of assert_pkg.vhd was successful.
+# Compile of print_pkg.vhd was successful.
+# Compile of tb_pkg.vhd was successful.
+# Compile of debouncer.vhd was successful.
+# Compile of debouncer_tb.vhd was successful with warnings.
+# 5 compiles, 0 failed with no errors.

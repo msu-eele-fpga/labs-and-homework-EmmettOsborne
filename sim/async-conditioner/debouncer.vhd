@@ -34,6 +34,13 @@ architecture debouncer_arch of debouncer is
 				count <= 0;
 			else
 				current_state <= next_state;
+				if current_state = debouncing then
+					if count < (debounce_time / clk_period) then
+						count <= count + 1;
+					end if;
+				else
+					count <= 0; -- Resetting count when not debouncing
+				end if;
 			end if;
 		end if;
 	end process;
@@ -46,7 +53,6 @@ architecture debouncer_arch of debouncer is
 			when idle =>
 				if input = '1' then
 					next_state <= debouncing;
-					count <= 0;
 				else
 					next_state <= idle;
 				end if;
@@ -55,7 +61,6 @@ architecture debouncer_arch of debouncer is
 				if count >= (debounce_time / clk_period) then
 					next_state <= idle;
 				else
-					count <= count + 1;
 					next_state <= debouncing;
 				end if;
 		end case;
