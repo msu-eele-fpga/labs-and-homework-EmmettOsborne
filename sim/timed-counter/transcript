@@ -1,32 +1,127 @@
-# Compile of timed_counter_tb.vhd failed with 9 errors.
-# Compile of tb_pkg.vhd failed with 1 errors.
-# Compile of timed_counter.vhd failed with 1 errors.
-# 3 compiles, 3 failed with 11 errors.
-# Compile of timed_counter_tb.vhd failed with 9 errors.
-# Compile of tb_pkg.vhd failed with 1 errors.
-# Compile of timed_counter.vhd was successful.
-# 3 compiles, 2 failed with 10 errors.
-# Compile of timed_counter_tb.vhd failed with 9 errors.
+# Compile of assert_pkg.vhd was successful.
+# Compile of print_pkg.vhd was successful.
 # Compile of tb_pkg.vhd was successful.
-# Compile of timed_counter.vhd was successful.
-# 3 compiles, 1 failed with 9 errors.
-# Compile of timed_counter_tb.vhd failed with 6 errors.
+# Compile of vending_machine_tb.vhd failed with 3 errors.
+# Compile of vending_machine.vhd failed with 1 errors.
+# 5 compiles, 2 failed with 4 errors.
+# reading C:/intelFPGA_lite/22.1std/questa_fse/win64/../modelsim.ini
+# Loading project vending-machine-sim
+# Compile of print_pkg.vhd was successful.
+# Compile of assert_pkg.vhd was successful.
 # Compile of tb_pkg.vhd was successful.
-# Compile of timed_counter.vhd was successful.
-# 3 compiles, 1 failed with 6 errors.
-# Compile of timed_counter_tb.vhd failed with 6 errors.
+# Compile of vending_machine.vhd failed with 1 errors.
+# Compile of vending_machine_tb.vhd failed with 3 errors.
+# 5 compiles, 2 failed with 4 errors.
+# Compile of print_pkg.vhd was successful.
+# Compile of assert_pkg.vhd was successful.
 # Compile of tb_pkg.vhd was successful.
-# Compile of timed_counter.vhd was successful.
-# 3 compiles, 1 failed with 6 errors.
-# Compile of timed_counter_tb.vhd failed with 6 errors.
+# Compile of vending_machine.vhd was successful.
+# Compile of vending_machine_tb.vhd was successful with warnings.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.vending_machine_tb
+# vsim -gui work.vending_machine_tb 
+# Start time: 21:45:47 on Oct 07,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.fixed_float_types
+# Loading ieee.math_real(body)
+# Loading ieee.fixed_generic_pkg(body)
+# Loading ieee.float_generic_pkg(body)
+# Loading ieee.fixed_pkg
+# Loading ieee.float_pkg
+# Loading work.assert_pkg(body)
+# Loading work.print_pkg(body)
+# Loading work.tb_pkg(body)
+# Loading std.env(body)
+# Loading work.vending_machine_tb(testbench)#1
+add wave -position insertpoint  \
+sim:/vending_machine_tb/clk_tb
+add wave -position insertpoint  \
+sim:/vending_machine_tb/rst_tb
+add wave -position insertpoint  \
+sim:/vending_machine_tb/nickel_tb
+add wave -position insertpoint  \
+sim:/vending_machine_tb/dime_tb
+add wave -position insertpoint  \
+sim:/vending_machine_tb/dispense_tb
+add wave -position insertpoint  \
+sim:/vending_machine_tb/amount_tb
+run
+add wave -position insertpoint  \
+sim:/vending_machine_tb/amount_tb
+run
+# ** Failure: error in test case 'amount is as expected'
+#      actual: 10, expected: 15
+#    Time: 3451 ns  Iteration: 0  Process: /vending_machine_tb/response_checker File: C:/Users/Administrator/eele467_emmett_osborne/labs-and-homework-EmmettOsborne/sim/common/assert_pkg.vhd
+# Break in Subprogram assert_that at C:/Users/Administrator/eele467_emmett_osborne/labs-and-homework-EmmettOsborne/sim/common/assert_pkg.vhd line 132
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Compile of print_pkg.vhd was successful.
+# Compile of assert_pkg.vhd was successful.
 # Compile of tb_pkg.vhd was successful.
-# Compile of timed_counter.vhd was successful.
-# 3 compiles, 1 failed with 6 errors.
+# Compile of vending_machine.vhd failed with 1 errors.
+# Compile of vending_machine_tb.vhd was successful with warnings.
+# 5 compiles, 1 failed with 1 error.
+restart
+# Compile of print_pkg.vhd was successful.
+# Compile of assert_pkg.vhd was successful.
 # Compile of tb_pkg.vhd was successful.
-# Compile of timed_counter_tb.vhd failed with 6 errors.
-# Compile of timed_counter.vhd was successful.
-# 3 compiles, 1 failed with 6 errors.
+# Compile of vending_machine.vhd was successful.
+# Compile of vending_machine_tb.vhd was successful with warnings.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.fixed_float_types
+# Loading ieee.math_real(body)
+# Loading ieee.fixed_generic_pkg(body)
+# Loading ieee.float_generic_pkg(body)
+# Loading ieee.fixed_pkg
+# Loading ieee.float_pkg
+# Loading work.assert_pkg(body)
+# Loading work.print_pkg(body)
+# Loading work.tb_pkg(body)
+# Loading std.env(body)
+# Loading work.vending_machine_tb(testbench)#1
+run
+# ** Failure: error in test case 'amount is as expected'
+#      actual: 5, expected: 10
+#    Time: 4651 ns  Iteration: 0  Process: /vending_machine_tb/response_checker File: C:/Users/Administrator/eele467_emmett_osborne/labs-and-homework-EmmettOsborne/sim/common/assert_pkg.vhd
+# Break in Subprogram assert_that at C:/Users/Administrator/eele467_emmett_osborne/labs-and-homework-EmmettOsborne/sim/common/assert_pkg.vhd line 132
+# Compile of print_pkg.vhd was successful.
+# Compile of assert_pkg.vhd was successful.
 # Compile of tb_pkg.vhd was successful.
-# Compile of timed_counter.vhd was successful.
-# Compile of timed_counter_tb.vhd failed with 6 errors.
-# 3 compiles, 1 failed with 6 errors.
+# Compile of vending_machine.vhd was successful.
+# Compile of vending_machine_tb.vhd was successful with warnings.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.fixed_float_types
+# Loading ieee.math_real(body)
+# Loading ieee.fixed_generic_pkg(body)
+# Loading ieee.float_generic_pkg(body)
+# Loading ieee.fixed_pkg
+# Loading ieee.float_pkg
+# Loading work.assert_pkg(body)
+# Loading work.print_pkg(body)
+# Loading work.tb_pkg(body)
+# Loading std.env(body)
+# Loading work.vending_machine_tb(testbench)#1
+run
+run
+# End of testbench.
+# 1
+# Break in Process stimuli_generator at C:/Users/Administrator/eele467_emmett_osborne/labs-and-homework-EmmettOsborne/sim/vending-machine/vending_machine_tb.vhd line 72
